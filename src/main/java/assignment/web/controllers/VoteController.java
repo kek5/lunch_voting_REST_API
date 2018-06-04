@@ -29,6 +29,7 @@ public class VoteController {
     }
 
     @PutMapping
+    @PreAuthorize("hasRole('ROLE_USER')")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<HttpStatus> vote(@RequestParam(value = "rest_id") Long rest_id) {
         restaurantService.checkIfExist(rest_id);
