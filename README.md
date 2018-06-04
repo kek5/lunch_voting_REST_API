@@ -63,5 +63,5 @@ You can also create your own user with USER role with the following URL request<
 
 ### User
 **Vote** <br/>
-Voting is available only after 00:00 and before 11:00 each day by UTC zone.
+Voting is available only after 00:00 and before 11:00 each day by UTC zone. <br/>
 `curl -u user:user -X PUT http://localhost:8080/api/v1/vote?rest_id=1`
