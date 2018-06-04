@@ -48,7 +48,7 @@ of the application:<br/>
 All the following cURL commands will include user to be made on his behalf
 
 ### SignUp
-You can also create your own user with USER role with the following URL request<br/>
+You can also create your own user with USER role with the following cURL request<br/>
 `curl -d '{"username" : "myusername", "password" : "mypassword"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/v1/signup`
 
 ### Admin
